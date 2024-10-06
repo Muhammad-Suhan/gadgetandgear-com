@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7d35260604.js" crossorigin="anonymous"></script>
+    <title>Gadgetandgear</title>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <section>
+        <div class="bg-gray-900 py-2 flex justify-around">
+            <!-- Logo -->
+            <div>
+                <img class="w-16 h-[43px]" src="./Images/GandGLogo.svg" alt="">
+            </div>
+            <!-- Search -->
+            <div class="flex w-[40%] item-senter gap-[8px]">
+                <input type="text" placeholder="Search products" class="px-4 rounded w-full h-[43px]" />
+                <button
+                    class="hidden lg:inline md:inline text-white bg-orange-500 rounded px-4 h-[43px]">Search</button>
+            </div>
+            <!-- Other Buttons -->
+            <div class=" hidden lg:inline md:inline">
+                <button class="btn text-white border-none btn-outline bg-gray-800 hover:bg-orange-500"><i
+                        class="fa-solid fa-location-dot"></i> Store locator</button>
+                <button class="btn text-white border-none btn-outline bg-gray-800 hover:bg-orange-500"><i
+                        class="fa-solid fa-cart-plus"></i></button>
+                <button class="btn text-white border-none btn-outline bg-gray-800 hover:bg-orange-500"><i
+                        class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+        <!-- -------- -->
+
+        <div class="pl-4 bg-black flex justify-items-center items-center text-[14px]">
+            <!-- Logo -->
+            <div class="mr-2 hidden lg:inline md:inline">
+                <div class="flex-1">
+                    <div class="drawer">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+                            <label for="my-drawer" class="btn bg-gray-800 border-none text-white drawer-button "> <i
+                                    class="fa-solid fa-bars"></i></label>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="menu bg-base-200 text-base-content min-h-full w-80">
+                                <!-- Sidebar content here -->
+                                <li><a>Phones</a></li>
+                                <li><a>iPad & Tab</a></li>
+                                <li><a>Mac</a></li>
+                                <li><a>Camera</a></li>
+                                <li><a>Headphone & Speaker</a></li>
+                                <li><a>Video Games</a></li>
+                                <li><a>Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:inline md:inline">
+                <ul>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Phones</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>iPhone</a></li>
+                                <li class=" hover:text-orange-500"><a>Samsung</a></li>
+                                <li class=" hover:text-orange-500"><a>Honor</a></li>
+                                <li class=" hover:text-orange-500"><a>Techno</a></li>
+                                <li class=" hover:text-orange-500"><a>Oppo</a></li>
+                                <li class=" hover:text-orange-500"><a>Vivo</a></li>
+                                <li class=" hover:text-orange-500"><a>OnePlus</a></li>
+                            </ul>
+                        </div>
+
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">iPad & Tab</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>iPad</a></li>
+                                <li class=" hover:text-orange-500"><a>Honor</a></li>
+                                <li class=" hover:text-orange-500"><a>Samsung</a></li>
+                                <li class=" hover:text-orange-500"><a>Xiaomi</a></li>
+                                <li class=" hover:text-orange-500"><a>Amazon</a></li>
+                                <li class=" hover:text-orange-500"><a>Graphics Tablet</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Mac</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>MacBook Air</a></li>
+                                <li class=" hover:text-orange-500"><a>MacBook Pro</a></li>
+                                <li class=" hover:text-orange-500"><a>iMac</a></li>
+                                <li class=" hover:text-orange-500"><a>Mac mini</a></li>
+                                <li class=" hover:text-orange-500"><a>Displays</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Wearables</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>Smart Watch</a></li>
+                                <li class=" hover:text-orange-500"><a>Smart Bands</a></li>
+                                <li class=" hover:text-orange-500"><a>Watch Belts</a></li>
+                                <li class=" hover:text-orange-500"><a>Watch Accessories</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Accessories</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>Power Bank</a></li>
+                                <li class=" hover:text-orange-500"><a>Phone Accessories
+                                    </a></li>
+                                <li class=" hover:text-orange-500"><a>Projector</a></li>
+                                <li class=" hover:text-orange-500"><a>Router</a></li>
+                                <li class=" hover:text-orange-500"><a>Cases & Screen Protector</a></li>
+                                <li class=" hover:text-orange-500"><a>Charger & Adapter</a></li>
+                                <li class=" hover:text-orange-500"><a>Wireless Charger</a></li>
+                                <li class=" hover:text-orange-500"><a>Car Accessories</a></li>
+                                <li class=" hover:text-orange-500"><a>SanDisk Memory Card
+                                    </a></li>
+                                <li class=" hover:text-orange-500"><a>SanDisk Memory Card
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Headphone & Speaker</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>AirPods</a></li>
+                                <li class=" hover:text-orange-500"><a>Speakers</a></li>
+                                <li class=" hover:text-orange-500"><a>Headphone</a></li>
+                                <li class=" hover:text-orange-500"><a>Earbuds</a></li>
+                                <li class=" hover:text-orange-500"><a>Headset</a></li>
+                            </ul>
+                        </div>
+
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Camera</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>IP Camera</a></li>
+                                <li class=" hover:text-orange-500"><a>Action Camera</a></li>
+                                <li class=" hover:text-orange-500"><a>Gimbal Stabilizer</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="text-white m-1">Video Gemes</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li class=" hover:text-orange-500"><a>Virtual Reality</a></li>
+                                <li class=" hover:text-orange-500"><a>PlayStation</a></li>
+                                <li class=" hover:text-orange-500"><a>Honor</a></li>
+                                <li class=" hover:text-orange-500"><a>Techno</a></li>
+                                <li class=" hover:text-orange-500"><a>Oppo</a></li>
+                                <li class=" hover:text-orange-500"><a>Vivo</a></li>
+                                <li class=" hover:text-orange-500"><a>OnePlus</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button"
+                                class="font-semibold bg-gradient-to-r from-blue-600 to-orange-800 inline-block text-transparent bg-clip-text m-1">
+                                Online Exclusive</div> <i class="text-white fa-solid fa-chevron-right"></i>
+                        </div>
+                        <!--  -->
+                    </li>
+                </ul>
+            </div>
+            <!--  -->
+
+        </div>
+        <!--  -->
+    </section>
+    <!-- Main -->
+    <main class="flex flex-col items-center gap-1">
+        <!-- HeroSection -->
+        <section class="w-[90%]">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./HeroCarousel/iphone-16-pro_1920x570.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./HeroCarousel/Discount.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./HeroCarousel/iphone-16_home-banner_1920x570.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./HeroCarousel/exchenge.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AuthorizedSeller Section -->
+        <section class="py-2 flex hidden lg:inline-flex">
+
+            <div class="w-[110px] border-r-2 px-4 border-black"><img src="./Images/AppleAuthorized.png" alt=""></div>
+
+            <div class="border-r-2 px-4 border-black"><i class="text-purple-400 fa-solid fa-cube text-xl"></i> <span
+                    class="font-semibold">Official Product</span></div>
+
+
+            <div class="border-r-2 px-4 border-black"><i class="text-yellow-400 text-xl fa-solid fa-ticket"></i> <span
+                    class="font-semibold">0% EM</span></div>
+
+            <div class="border-r-2 px-4 border-black"><i class="fa-solid fa-arrow-right-arrow-left text-xl"></i> <span
+                    class="font-semibold">Exchange</span></div>
+
+            <div class="border-r-2 px-4 border-black"><i class="text-red-400 fa-solid fa-truck text-xl"></i> <span
+                    class="font-semibold">Fastest Delivery</span></div>
+
+            <div class="px-4"><i class="text-green-400 text-xl fa-solid fa-shield-halved"></i> <span
+                    class="font-semibold">100% Secure Payment</span></div>
+
+        </section>
+
+        <!-- Featured Categories Section -->
+        <h1 class="text-3xl font-bold pt-12 pb-8">Featured Categories</h1>
+        <section class=" flex flex-wrap justify-center">
+            <!-- 1 -->
+            <div>
+                <div class="text-center p-1 rounded-full"><img src="./Images/phone-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Phones</div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <div class="text-center p-1 rounded-full"><img src="./Images/powerbank-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Power Bank</div>
+            </div>
+            <!--3  -->
+            <div>
+                <div class="text-center p-1 rounded-full"><img src="./Images/speaker-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Speakerd</div>
+            </div>
+            <!-- 4 -->
+            <div class="">
+                <div class="text-center p-1 rounded-full"><img src="./Images/camera-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Camera</div>
+            </div>
+            <!-- 5 -->
+            <div class="">
+                <div class="text-center p-1 rounded-full"><img src="./Images/case-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Cases</div>
+            </div>
+            <!-- 6 -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/cable-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Adapters</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/car-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Car Accessories</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/wareablewatch-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Wearables</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/mac-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Mac</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/game-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Video Gemes</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/earbuds-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Earbuds</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/airpods-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">AirPods</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/ipad-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">iPad</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/tablet-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Tablets</div>
+            </div>
+            <!--  -->
+            <div class="hidden lg:inline">
+                <div class="text-center p-1 rounded-full"><img src="./Images/hedset-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">Headset</div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="text-center p-1 rounded-full"><img src="./Images/allcatagories-ilu.png" alt=""></div>
+                <div class="text-center font-semibold">All Categories</div>
+            </div>
+
+        </section>
+
+        <!-- Online Exclusive Products section -->
+        <h1 class="text-3xl grow w-[90%] font-bold pt-12 pb-8">Online Exclusive Products</h1>
+        <section>
+
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
